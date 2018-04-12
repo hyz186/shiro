@@ -1,4 +1,4 @@
-package cn.han.shiro.demo;
+package cn.hanyz.shiro.demo2;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -9,18 +9,17 @@ import org.apache.shiro.subject.Subject;
 
 
 /**
- *
- * @author han  
- * @date 18/4/12 下午7:51  
- * @param   
- * @return   
+ * @param
+ * @author han
+ * @date 18/4/12 下午7:51
+ * @return
  */
-public class Demo1 {
+public class Demo2 {
 
     public static void main(String[] args) {
 
         /*获取SecurityManagerFactory工厂,此次使用Ini配置文件初始化SecurityManager */
-        IniSecurityManagerFactory factory = new IniSecurityManagerFactory("/Users/han/Documents/idea/shiro/src/main/resources/shiro.ini");
+        IniSecurityManagerFactory factory = new IniSecurityManagerFactory("/Users/han/Documents/idea/shiro/src/main/resources/shiro-realm.ini");
 
         /*得到SecurityManager实例 并绑定给SecurityUtils*/
         SecurityManager securityManager = factory.getInstance();
@@ -28,7 +27,7 @@ public class Demo1 {
 
         /*得到Subject及创建用户名和密码的身份验证Token */
         Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken("zhang","123");
+        UsernamePasswordToken token = new UsernamePasswordToken("zhang", "123");
 
         try {
             subject.login(token);
@@ -40,4 +39,15 @@ public class Demo1 {
         subject.logout();
     }
 }
+
+
+/** 笔记
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 
