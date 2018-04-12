@@ -7,7 +7,15 @@ import org.apache.shiro.config.IniSecurityManagerFactory;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.subject.Subject;
 
-public class TestShiro {
+
+/**
+ *
+ * @author han  
+ * @date 18/4/12 下午7:51  
+ * @param   
+ * @return   
+ */
+public class Demo1 {
 
     public static void main(String[] args) {
 
