@@ -1,4 +1,4 @@
-package cn.han.shiro.demo1;
+package cn.hanyz.shiro.demo1;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
